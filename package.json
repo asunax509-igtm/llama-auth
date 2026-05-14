@@ -1,15 +1,21 @@
 {
-  "name": "llama-auth",
+  "name": "llama-auth-frontend",
   "private": true,
   "version": "0.1.0",
-  "workspaces": [
-    "backend",
-    "frontend",
-    "packages/sdk"
-  ],
+  "type": "module",
   "scripts": {
-    "dev": "npm run -w backend dev & npm run -w frontend dev",
-    "build": "npm run -w backend build && npm run -w frontend build",
-    "start": "npm run -w backend start"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.7.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.16.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.1"
   }
 }
