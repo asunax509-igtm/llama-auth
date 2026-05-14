@@ -1,0 +1,15 @@
+{
+  "name": "llama-auth",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "backend",
+    "frontend",
+    "packages/sdk"
+  ],
+  "scripts": {
+    "dev": "npm run -w backend dev & npm run -w frontend dev",
+    "build": "npm run -w backend build && npm run -w frontend build",
+    "start": "npm run -w backend start"
+  }
+}
